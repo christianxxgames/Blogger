@@ -1,0 +1,29 @@
+
+> blogger@0.0.0 start /home/bitnami/blogger
+> node ./bin/www
+
+/home/bitnami/blogger/node_modules/express/lib/router/route.js:202
+        throw new Error(msg);
+        ^
+
+Error: Route.get() requires a callback function but got a [object Object]
+    at Route.<computed> [as get] (/home/bitnami/blogger/node_modules/express/lib/router/route.js:202:15)
+    at Function.proto.<computed> [as get] (/home/bitnami/blogger/node_modules/express/lib/router/index.js:510:19)
+    at Object.<anonymous> (/home/bitnami/blogger/app_server/routes/index.js:8:8)
+    at Module._compile (internal/modules/cjs/loader.js:1138:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1158:10)
+    at Module.load (internal/modules/cjs/loader.js:986:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:879:14)
+    at Module.require (internal/modules/cjs/loader.js:1026:19)
+    at require (internal/modules/cjs/helpers.js:72:18)
+    at Object.<anonymous> (/home/bitnami/blogger/app.js:7:21)
+npm ERR! code ELIFECYCLE
+npm ERR! errno 1
+npm ERR! blogger@0.0.0 start: `node ./bin/www`
+npm ERR! Exit status 1
+npm ERR! 
+npm ERR! Failed at the blogger@0.0.0 start script.
+npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     /root/.npm/_logs/2020-09-22T21_49_46_973Z-debug.log

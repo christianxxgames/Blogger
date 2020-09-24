@@ -1,0 +1,36 @@
+doctype html
+
+html
+
+  head
+
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= title
+    link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+    link(rel='stylesheet', href='/stylesheets/font-awesome.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+
+  body
+
+    nav.navbar.fixed-top.navbar-expand-sm.navbar-dark.bg-dark
+      .container
+        button.navbar-toggler.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarMain')
+          span.navbar-toggler-icon
+        a.navbar-brand(href='/ ') My Blog
+        #navbarMain.navbar-collapse.collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item
+              a.nav-link(href='/list-blogs/') List Blogs
+            li.nav-item
+              a.nav-link(href='/add-blog/') Add Blog 
+
+    .container
+      block content
+      footer
+        .row
+          .col-12
+            small &copy; Christian Liberatore 2020
+
+    script(src='https://code.jquery.com/jquery-3.1.1.slim.min.js')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js')
+    script(src='/javascripts/bootstrap.min.js') 
