@@ -918,3 +918,4 @@ npm ERR!     /root/.npm/_logs/2020-09-23T20_58_26_953Z-debug.log
 [0mGET /stylesheets/font-awesome.min.css [33m404 [0m44.136 ms - 2146[0m
 [0mGET /stylesheets/style.css [36m304 [0m0.623 ms - -[0m
 [0mGET /javascripts/bootstrap.min.js [36m304 [0m0.676 ms - -[0m
+[0mGET / [32m200 [0m52.007 ms - 1421[0m
