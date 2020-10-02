@@ -2,4 +2,28 @@ extends layout
 
 block content
   h1= title
-  p #{title} feature is currently under construction
+  .row
+    .col-xs-12.col-sm-8
+      .row.list-group
+        each blog in blogPosts
+          small &nbsp  
+            .card
+              .card-block
+                h4
+                  .col-sm
+                    .card-title= blog.title
+                    small &nbsp
+                    h6
+                      .card-text= blog.text
+                      small &nbsp
+                        .card-footer
+                          ul.nav.justify-content-end.nav-pills.card-header-pills
+                            li.nav-item
+                              a.nav-link(href='/edit-blog') Edit
+                                // i.fa.fa-edit
+                            li.nav-item
+                              a.nav-link(href='/delete-blog') Delete
+                                // i.fa.fa-trash     
+
+
+    
